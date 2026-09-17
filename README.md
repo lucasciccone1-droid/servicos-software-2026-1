@@ -1,6 +1,6 @@
 # Feedback Inteligente
 
-Projeto da disciplina de Serviços de Software: uma aplicação conteinerizada que analisa feedbacks de clientes em português.
+Projeto da disciplina de Serviços de Software: uma aplicação que analisa feedbacks de clientes.
 
 ## Funcionalidades
 
