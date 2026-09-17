@@ -1,6 +1,9 @@
 # Feedback Inteligente
 
-Projeto da disciplina de Serviços de Software: uma aplicação que analisa feedbacks de clientes.
+Projeto acadêmico que demonstra a integração entre frontend e backend por meio de uma API REST. A aplicação analisa feedbacks de clientes em português e retorna sentimento, confiança, prioridade de atendimento, palavras-chave e uma ação recomendada.
+
+**Autor:** Lucas Ciccone  
+**Disciplina:** Serviços de Software
 
 ## Funcionalidades
 
@@ -22,7 +25,7 @@ flowchart LR
     B -->|JSON| F
 ```
 
-O projeto possui exatamente dois containers:
+A aplicação é composta por dois serviços conteinerizados:
 
 | Serviço | Tecnologia | Responsabilidade |
 |---|---|---|
@@ -36,7 +39,7 @@ O modelo é treinado na inicialização do backend com `backend/data/feedbacks.c
 Pré-requisito: Docker Desktop ou Docker Engine com Docker Compose.
 
 ```bash
-git clone URL_DO_SEU_FORK
+git clone https://github.com/lucasciccone1-droid/servicos-software-2026-1.git
 cd servicos-software-2026-1
 docker compose up --build
 ```
@@ -94,7 +97,3 @@ curl --fail http://localhost:7860
 ├── compose.yaml
 └── README.md
 ```
-
-
-> A aplicação Feedback Inteligente permite que o usuário insira um comentário de cliente em português. O frontend, desenvolvido com Gradio, envia o texto por meio de uma requisição POST para a API REST do backend, desenvolvida com FastAPI. O backend utiliza um modelo próprio de processamento de linguagem natural, baseado em TF-IDF e Regressão Logística, para classificar o sentimento como positivo, neutro ou negativo. A resposta também apresenta o nível de confiança, as probabilidades das classes, palavras-chave, a prioridade de atendimento e uma ação recomendada. A solução é executada em dois containers Docker orquestrados pelo Docker Compose.
-
