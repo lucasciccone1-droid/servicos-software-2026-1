@@ -95,11 +95,6 @@ curl --fail http://localhost:7860
 └── README.md
 ```
 
-## Texto sugerido para o campo “Entrada de texto”
 
 > A aplicação Feedback Inteligente permite que o usuário insira um comentário de cliente em português. O frontend, desenvolvido com Gradio, envia o texto por meio de uma requisição POST para a API REST do backend, desenvolvida com FastAPI. O backend utiliza um modelo próprio de processamento de linguagem natural, baseado em TF-IDF e Regressão Logística, para classificar o sentimento como positivo, neutro ou negativo. A resposta também apresenta o nível de confiança, as probabilidades das classes, palavras-chave, a prioridade de atendimento e uma ação recomendada. A solução é executada em dois containers Docker orquestrados pelo Docker Compose.
-
-## Limitações e possíveis evoluções
-
-O conjunto de treinamento é pequeno e foi criado para fins acadêmicos, portanto o modelo é uma prova de conceito. Como evolução, seria possível ampliar e versionar a base, medir precisão, recall e F1 em um conjunto de teste e registrar os feedbacks em banco de dados.
 
